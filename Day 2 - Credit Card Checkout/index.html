@@ -104,23 +104,38 @@
 							<div class="form__elements">
 								<div class="form__field">
 									<label for="">
-										<span class="js-form__label">Card Number</span>
-										<input type="text" class="js-form__text-input"/>
+										<span class="js-form__label"
+											>Card Number</span
+										>
+										<input
+											type="text"
+											class="js-form__text-input"
+										/>
 									</label>
 								</div>
 
 								<div class="form__field">
 									<label for="">
-										<span class="js-form__label">Card Holder Name</span>
-										<input type="text" class="js-form__text-input"/>
+										<span class="js-form__label"
+											>Card Holder Name</span
+										>
+										<input
+											type="text"
+											class="js-form__text-input"
+										/>
 									</label>
 								</div>
 
 								<div class="form__flex">
 									<div class="form__field">
 										<label for="">
-											<span class="js-form__label">Expiry Date</span>
-											<input type="text" class="js-form__text-input"/>
+											<span class="js-form__label"
+												>Expiry Date</span
+											>
+											<input
+												type="text"
+												class="js-form__text-input"
+											/>
 											<ion-icon
 												name="calendar-outline"
 											></ion-icon>
@@ -129,8 +144,13 @@
 
 									<div class="form__field">
 										<label for="">
-											<span class="js-form__label">CVV Code</span>
-											<input type="text" class="js-form__text-input"/>
+											<span class="js-form__label"
+												>CVV Code</span
+											>
+											<input
+												type="text"
+												class="js-form__text-input"
+											/>
 											<ion-icon
 												name="alert-circle-outline"
 											></ion-icon>
@@ -146,7 +166,7 @@
 										<input
 											type="checkbox"
 											name=""
-											class="remember-information"
+											id="remember-information"
 										/>
 										<span>Save card for the future</span>
 									</label>
@@ -165,8 +185,8 @@
 				<div class="container">
 					<div class="empty-block"></div>
 
-					<header>
-						<h2>Order Summary</h2>
+					<header class="header">
+						<h2 class="header__title">Order Summary</h2>
 					</header>
 
 					<ul class="items">
@@ -178,7 +198,7 @@
 										alt="Item image"
 									/>
 								</figure>
-								<div class="wrapper">
+								<div class="items__text-wrapper">
 									<p class="items__item-name">
 										Sony WH-1000XM4
 									</p>
@@ -195,7 +215,7 @@
 										alt="Item image"
 									/>
 								</figure>
-								<div class="wrapper">
+								<div class="items__text-wrapper">
 									<p class="items__item-name">
 										Sony WH-1000XM4
 									</p>
@@ -212,7 +232,7 @@
 										alt="Item image"
 									/>
 								</figure>
-								<div class="wrapper">
+								<div class="items__text-wrapper">
 									<p class="items__item-name">
 										Sony WH-1000XM4
 									</p>
@@ -225,16 +245,18 @@
 
 					<footer class="total">
 						<div class="wrapper">
-							<p class="total__label">Subtotal</p>
-							<p class="total__price">$716.85</p>
-						</div>
-						<div class="wrapper">
-							<p class="total__label">Shipping</p>
-							<p class="total__price">$10.00</p>
-						</div>
-						<div class="wrapper">
-							<p class="total__label">Total</p>
-							<p class="total__price">$726.85</p>
+							<div class="total__totals">
+								<p class="total__label">Subtotal</p>
+								<p class="total__price">$716.85</p>
+							</div>
+							<div class="total__totals">
+								<p class="total__label">Shipping</p>
+								<p class="total__price">$10.00</p>
+							</div>
+							<div class="total__totals">
+								<p class="total__label">Total</p>
+								<p class="total__price">$726.85</p>
+							</div>
 						</div>
 					</footer>
 				</div>
