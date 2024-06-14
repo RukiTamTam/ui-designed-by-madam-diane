@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles.css" />
+
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- Ionicon Script -->
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+		></script>
+		<script
+			nomodule
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+		></script>
+
+		<title>Day 2 - Credit Card Checkout</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="left-col">
+				<header>
+					<button class="back-button">
+						<ion-icon name="arrow-back-outline"></ion-icon>
+						<span>Go back</span>
+					</button>
+				</header>
+
+				<section class="breadcrumbs">
+					<ul class="breadcrumbs__navigation">
+						<li class="breadcrumbs__nav-wrapper">
+							<ion-icon name="checkmark-outline"></ion-icon>
+							<p class="breadcrumbs__name">Shipping</p>
+						</li>
+						<li class="breadcrumbs__nav-wrapper">
+							<ion-icon name="checkmark-outline"></ion-icon>
+							<p class="breadcrumbs__name">Billing</p>
+						</li>
+						<li class="breadcrumbs__nav-wrapper">
+							<ion-icon name="checkmark-outline"></ion-icon>
+							<p class="breadcrumbs__name">Payment</p>
+						</li>
+						<li class="breadcrumbs__nav-wrapper">
+							<ion-icon name="checkmark-outline"></ion-icon>
+							<p class="breadcrumbs__name">Review</p>
+						</li>
+					</ul>
+				</section>
+
+				<section class="payment">
+					<div class="container">
+						<header>
+							<h2 class="payment__header-title">Payment</h2>
+						</header>
+
+						<form action="" class="form">
+							<fieldset class="form__payment-options">
+								<input
+									type="radio"
+									name="payment-options"
+									id="payment-option-mastercard"
+								/>
+								<label for="payment-option-mastercard">
+									<img
+										src="./asset/mastercard.svg"
+										alt="Payment option image"
+									/>
+								</label>
+
+								<input
+									type="radio"
+									name="payment-options"
+									id="payment-option-visa"
+								/>
+								<label for="payment-option-visa">
+									<img
+										src="./asset/visa.svg"
+										alt="Payment option image"
+									/>
+								</label>
+
+								<input
+									type="radio"
+									name="payment-options"
+									id="payment-option-paypal"
+								/>
+								<label for="payment-option-paypal">
+									<img
+										src="./asset/paypal.svg"
+										alt="Payment option image"
+									/>
+								</label>
+							</fieldset>
+
+							<div class="form__elements">
+								<div class="form__field">
+									<label for="">
+										<span class="js-form__label">Card Number</span>
+										<input type="text" class="js-form__text-input"/>
+									</label>
+								</div>
+
+								<div class="form__field">
+									<label for="">
+										<span class="js-form__label">Card Holder Name</span>
+										<input type="text" class="js-form__text-input"/>
+									</label>
+								</div>
+
+								<div class="form__flex">
+									<div class="form__field">
+										<label for="">
+											<span class="js-form__label">Expiry Date</span>
+											<input type="text" class="js-form__text-input"/>
+											<ion-icon
+												name="calendar-outline"
+											></ion-icon>
+										</label>
+									</div>
+
+									<div class="form__field">
+										<label for="">
+											<span class="js-form__label">CVV Code</span>
+											<input type="text" class="js-form__text-input"/>
+											<ion-icon
+												name="alert-circle-outline"
+											></ion-icon>
+										</label>
+									</div>
+								</div>
+
+								<div class="form__field-actions">
+									<label
+										for="remember-information"
+										class="form__prompt"
+									>
+										<input
+											type="checkbox"
+											name=""
+											class="remember-information"
+										/>
+										<span>Save card for the future</span>
+									</label>
+
+									<button class="form__submit-button">
+										Checkout
+									</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</section>
+			</div>
+
+			<div class="right-col">
+				<div class="container">
+					<div class="empty-block"></div>
+
+					<header>
+						<h2>Order Summary</h2>
+					</header>
+
+					<ul class="items">
+						<li class="items__item">
+							<div class="wrapper">
+								<figure class="items__image">
+									<img
+										src="./asset/ac8e9247f3862fc2759211fca8e73794.jpg"
+										alt="Item image"
+									/>
+								</figure>
+								<div class="wrapper">
+									<p class="items__item-name">
+										Sony WH-1000XM4
+									</p>
+									<p class="items__item-price">$238.95</p>
+									<p class="items__item-quantity">Qty: 1</p>
+								</div>
+							</div>
+						</li>
+						<li class="items__item">
+							<div class="wrapper">
+								<figure class="items__image">
+									<img
+										src="./asset/cd078e4ab839236433b09156a9dd4705.jpg"
+										alt="Item image"
+									/>
+								</figure>
+								<div class="wrapper">
+									<p class="items__item-name">
+										Sony WH-1000XM4
+									</p>
+									<p class="items__item-price">$238.95</p>
+									<p class="items__item-quantity">Qty: 1</p>
+								</div>
+							</div>
+						</li>
+						<li class="items__item">
+							<div class="wrapper">
+								<figure class="items__image">
+									<img
+										src="./asset/d09c56a5958a018a44af290cbbb835cf.jpg"
+										alt="Item image"
+									/>
+								</figure>
+								<div class="wrapper">
+									<p class="items__item-name">
+										Sony WH-1000XM4
+									</p>
+									<p class="items__item-price">$238.95</p>
+									<p class="items__item-quantity">Qty: 1</p>
+								</div>
+							</div>
+						</li>
+					</ul>
+
+					<footer class="total">
+						<div class="wrapper">
+							<p class="total__label">Subtotal</p>
+							<p class="total__price">$716.85</p>
+						</div>
+						<div class="wrapper">
+							<p class="total__label">Shipping</p>
+							<p class="total__price">$10.00</p>
+						</div>
+						<div class="wrapper">
+							<p class="total__label">Total</p>
+							<p class="total__price">$726.85</p>
+						</div>
+					</footer>
+				</div>
+			</div>
+		</div>
+
+		<script src="script.js"></script>
+	</body>
+</html>
